@@ -4,6 +4,9 @@
     {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: normal;
+        width: 1000px;
+        margin: auto;
+        display: flex;
     }
 
 /*bloc côté gauche*/
@@ -29,6 +32,13 @@
         }
 
     /*artilces*/
+        #BlocG
+        {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
         #BlocG h1
         {
@@ -138,6 +148,8 @@
         {
             margin: 0px 5px 0px 5px;
             justify-content: space-between;
+            display: flex;
+            align-items: flex-start;
         }
         
         .blocA i
@@ -194,37 +206,14 @@
     #Reco
     {
         margin: 10px 10px 10px 20px;
+        display: flex;
+            justify-content: space-around;
     }
 
-/*version ordianteur*/
-
-@media all and (min-width: 1024px)
-{
-        body
-        {
-            width: 1000px;
-            margin: auto;
-            display: flex;
-        }
-
-        #BlocG
-        {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        #BlocD
+    #BlocD
         {
             flex: 2;
             padding-left: 15px;
-        }
-
-        .blocA
-        {
-            display: flex;
-            align-items: flex-start;
         }
 
         .dotedate
@@ -237,9 +226,6 @@
             flex: 5;
         }
 
-        #Reco
-        {
-            display: flex;
-            justify-content: space-around;
-        }
-}
+
+/*version ordianteur*/
+
